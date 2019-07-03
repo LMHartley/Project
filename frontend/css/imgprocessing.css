@@ -1,0 +1,109 @@
+.btn-search {
+   color: black;
+   border-color: white;
+   background-color: white;
+ }
+.headergrid { grid-area: header; }
+.contentgrid { grid-area: content; }
+.footergrid { grid-area: footer; }
+
+.grid-container {
+   display: grid;
+   grid-template-areas:
+     'header'
+     'content'
+     'footer';
+   grid-gap: 0px;
+   background-color: #343a40!important;
+   padding: 0px;
+ }
+ 
+ .grid-container > div {
+   background-color: #343a40!important;
+   text-align: center;
+   padding: 1px 0;
+   font-size: 30px;
+ }
+ .footergrid{
+    text-align: center;
+ }
+.btn-social.btn-twitter{
+   padding: 5px 7px;
+}
+.btn-social.btn-twitter:hover{
+   background-color: #00aced;
+}
+.fab.fa-twitter{
+   color: white
+}
+.btn-social.btn-facebook{
+   padding: 5px 5px;
+}
+.btn-social.btn-facebook:hover{
+   background-color: #3b5998;
+}
+.fab.fa-facebook{
+   color: white
+}
+.btn-social.btn-instagram{
+   padding: 5px 8px;
+}
+.btn-social.btn-instagram:hover{
+   color: #fff;
+   background: #d6249f;
+   background-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fab.fa-instagram{
+   color: white
+}
+.btn-social.btn-tumblr{
+   padding: 5px 15px;
+}
+.btn-social.btn-tumblr:hover{
+   background-color: #32506d;
+}
+.fab.fa-tumblr{
+   color: white
+}
+.btn-social.btn-reddit{
+   padding: 5px 7px;
+}
+.btn-social.btn-reddit:hover{
+   background-color: #ff6600;
+}
+.fab.fa-reddit{
+   color: white
+}
+.mt-0{
+   color: white;
+}
+body{
+   background-color: #343a40 !important;
+}
+.carousel-item{
+   height: 30rem;
+}
+.uploadClass{
+    color: white;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+ .main{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+.uploadButtonClass{
+   color: white;
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}

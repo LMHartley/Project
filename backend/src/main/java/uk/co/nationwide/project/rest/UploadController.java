@@ -18,7 +18,7 @@ import uk.co.nationwide.project.domain.Upload;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UploadController {
 
 	@Autowired
@@ -42,7 +42,4 @@ public class UploadController {
 		uploadService.deleteUpload(id);
 		return ResponseEntity.ok(uploadService.getUpload());
 	}
-
-
-
 }
