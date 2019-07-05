@@ -4,6 +4,7 @@ function fetchData(){
         const parsedData = JSON.parse(request.responseText);
         console.log("DATA:", parsedData);
         displayAllUploads(parsedData);
+        searchDatabase(parsedData);
     }
     request.open("GET", "http://localhost:8080/upload");
     console.log("received")
@@ -36,7 +37,7 @@ function displayAllUploads(data){
         button.className = "btn btn-outline-danger btn-search my-2 my-sm-0";
         console.log(button);
         uploadContainer.append(button);
-    }
+    } 
     document.getElementById("uploadElement").append(uploadContainer);
 }
 const formdata={}
@@ -76,4 +77,22 @@ function deleteUpload(id){
     request.send();
     console.log("sent");
     window.location(href="recentuploads.html")
+}
+
+function takeSearch(search){
+    displaySearchResults(search);
+}
+
+function displaySearchResults(data,search){
+    const resultsContainer = document.createElement("div");
+    for(let entry of data){
+        if(entry == search){
+        const element = document.createElement("h2");
+        element.innerText = entry;
+        element.className = "resultClass";
+        resultsContainer.append(element);
+        }
+
+        document.getElementById("resultsElement").append(resultsContainer);
+    }
 }

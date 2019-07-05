@@ -11,7 +11,7 @@ This is a simple web application that is capable of connecting to a database, up
 
 Project Management
 ---------------
-This project uses an agile methodology. Please see Trello board at the following link: 
+This project uses an agile methodology. Please see my Trello board at the following link: 
 https://trello.com/b/hUgE6PKq/image-hosting-application
 
 Running the application
